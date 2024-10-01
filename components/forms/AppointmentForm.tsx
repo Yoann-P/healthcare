@@ -31,8 +31,8 @@ const AppointmentForm = ({
   userId: string;
   patientId: string;
   type: "create" | "cancel" | "schedule";
-  appointment: Appointment;
-  setOpen: (open: boolean) => void;
+  appointment?: Appointment;
+  setOpen?: (open: boolean) => void;
 }) => {
   console.log(
     "AppointmentForm rendered with userId:",
